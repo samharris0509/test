@@ -18,5 +18,5 @@ let checkAndCall = function (func, number) {
 
 
 for (let index in Array) {
-  checkAndCall(addOne, Array[index]);
-}
+    checkAndCall(addOne, parseInt(index));
+  }
