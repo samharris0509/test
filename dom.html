@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 Dom</title>
+<style>
+   
+    #container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid #000; 
+        border-radius: 10px; 
+        text-align: center;
+        margin-top: 200px;
+        
+        
+    }
+
+    
+</style>
+</head>
+<body>
+
+
+
+<div id="container">
+    
+
+
+<script>
+    
+    const containerDiv = document.getElementById('container');
+
+    
+    for (let i = 1; i <= 5; i++) {
+       
+        const Words = document.createElement('p');
+        
+       
+        Words.textContent = `hello world ${i}`;
+        
+       
+        containerDiv.appendChild(Words);
+    }
+
+    
+
+    const body = document.body;
+
+   
+    function changeColors() {
+        containerDiv.style.backgroundColor = '#90DE61';
+        body.style.backgroundColor = '#DE5D0E';
+    }
+
+   
+    const button = document.createElement('button');
+    button.textContent = 'Change Colors';
+    button.addEventListener('click', changeColors); 
+
+
+    containerDiv.appendChild(button);
+</script>
+</div>
+
+
+</body>
+</html>
+
+</body>
+</html>
