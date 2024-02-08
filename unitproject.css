@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E899FA; 
+}
+
+#drawingContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #E899FA; 
+}
+
+#drawingCanvas {
+    border: 1px solid #000;
+    background-color: white; 
+}
+
+.drawing-box {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+
+
+.delete-button {
+    background-color: #773A15; 
+        color: white; 
+        border: none;
+        padding: 10px 20px; 
+        margin-right: 0px;
+        cursor: pointer;
+}
+
+.label-span {
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 5px; 
+    border-radius: 5px; 
+}.drawing-box {
+        display: inline-block;
+        border: 1px solid #000;
+        margin: 10px;
+    }
+    #savedDrawings {
+        margin-top: auto;
+        text-align: center;
+    }
+    .color-button {
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+    #blueButton {
+        background-color: blue;
+        color: white;
+    }
+    #redButton {
+        background-color: red;
+        color: white;
+    }
+    #greenButton {
+        background-color: green;
+        color: white;
+    }
+    #saveButton {
+        background-color: #773A15; 
+        color: white; 
+        border: none;
+        padding: 10px 20px; 
+        cursor: pointer; 
+    }
+    
