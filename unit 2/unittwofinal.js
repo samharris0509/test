@@ -1,10 +1,12 @@
+// Define a class for creating Rock objects with name, description, and imageUrl properties
 class Rock {
     constructor(name, description, imageUrl) {
         this.name = name;
         this.description = description;
-        this.imageUrl = imageUrl; // New property for the image URL
+        this.imageUrl = imageUrl; // Property for storing the image URL
     }
 
+    // Method to return HTML content displaying the rock's information and image
     displayInfo() {
         return `
             <h3>${this.name}</h3>
@@ -14,7 +16,7 @@ class Rock {
     }
 }
 
-
+// Create an array of Rock instances, each representing different types of rocks
 const rocks = [
     new Rock('Granite', 'A very hard, granular, crystalline, igneous rock consisting mainly of quartz, mica, and feldspar.', 'granite2-copy.jpg'),
     new Rock('Marble', 'A metamorphic rock composed of recrystallized carbonate minerals, most commonly calcite or dolomite.', 'marble2020(6).jpg'),
@@ -23,13 +25,19 @@ const rocks = [
     new Rock('Sandstone', 'A clastic sedimentary rock composed mainly of sand-sized mineral particles or rock fragments.', '00105-IMG_5703-sandstone.jpg')
 ];
 
+// Variable to track the current displayed rock
 let currentRockIndex = 0;
 
+// Function to be executed when the window is fully loaded
 window.onload = function() {
+    // Get the button element and add a click event listener
     const infoBtn = document.getElementById('rockInfoBtn');
     infoBtn.addEventListener('click', function() {
+        // Get the div where rock information will be displayed
         const rockInfoDiv = document.getElementById('rockInfo');
+        // Update the innerHTML of the div with the current rock's information
         rockInfoDiv.innerHTML = rocks[currentRockIndex].displayInfo();
+        // Increment the index to show the next rock's information upon next click
         currentRockIndex = (currentRockIndex + 1) % rocks.length; 
     }, false);
 };
