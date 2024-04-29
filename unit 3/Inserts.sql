@@ -8,9 +8,7 @@ INSERT INTO gm_publishers (publisher_name, net_worth, address) VALUES ('Publishe
 INSERT INTO gm_publishers (publisher_name, net_worth, address) 
 VALUES ('PlayNet', 2000000, 'address 5');
 
-INSERT INTO gm_lead_developers (lead_name, net_worth) 
-SELECT developer_name, net_worth FROM gm_developers 
-WHERE developer_name IN ('GameStudios', 'DevMagic', 'CodeCraft');
+
 
 
 INSERT INTO gm_developers (developer_name, net_worth) VALUES ('GameStudios', 1000000);
@@ -196,6 +194,10 @@ VALUES (2, 'questpassword', 'QuestMaster', 'player2@example.com', 'Adventure Que
 INSERT INTO gm_accounts (id, password, username, owner, game) 
 VALUES (3, 'mysterysolver', 'MysteryHunter', 'player3@example.com', 'Island Mystery');
 
+
+INSERT INTO gm_ips (ip_name, owner_d, owner_p) ​
+
+VALUES ('Demeo', 'DevMagic', NULL);
 
 
 

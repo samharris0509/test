@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 1px;
+    margin-top: 20px;
+    justify-content: center;
+    position: relative;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #9fd398;
+    border: 1px solid #ccc;
+}
+
+.wall {
+    background-color: black;
+}
+
+#dot {
+    background-color: red;
+    z-index: 10;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+}
+
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #45a049;
+}
